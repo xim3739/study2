@@ -1,0 +1,11 @@
+Git 이란?
+
+
+나의 Github 주소
+- https://github.com/xim3739
+
+심재식 Git 계정
+- simjs1984@naver.com
+
+Git 연습 웹페이지
+- https://learngitbranching.js.org/
