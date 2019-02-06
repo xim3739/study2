@@ -1,0 +1,5 @@
+git commit 하기
+
+git branch 만들기
+
+git merge 를 이용해서 두 개의 branch 합치기
