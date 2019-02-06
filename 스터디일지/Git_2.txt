@@ -1,5 +1,41 @@
-git commit 하기
+커밋 소개
+git commit <-- 새로운 커밋 만들기!
 
 git branch 만들기
+git branch bugFix <-- bugFix 라는 branch 만듦
+git checkout bugFix <-- bugFix 라는 branch로 이동
 
-git merge 를 이용해서 두 개의 branch 합치기
+브랜치 합치기(merge)
+git branch bugFix <- bugFix라는 branch 만듦
+git checkout bugFix <- bugFix라는 branch로 이동
+git commit <- 커밋 생성
+git ckeckout master <- master라는 bracnh로 이동
+git commit <- 커밋 생성
+git merge bugFix <- 현재있는 브랜치와 bugFix라는 branch와 합치기(merge)
+
+rebase
+git branch bugFix <- bugFix라는 branch 만듦
+git checkout bugFix <- bugFix라는 branch로 이동
+git commit <- 커밋 생성
+git checkout master <- master라는 bracnh로 이동
+git commit <- 커밋 생성
+git checkout bugFix <- bugFix라는 branch로 이동
+git rebase master <- master branch로 귀속? 시키기
+
+헤드 옮기기
+git checkout C* <- 어느 커밋으로 HEAD를 옮길지 정하는거
+
+헤드 옮기기 : 상대참조
+git checkout master^ <- master branch에서 하나 위에 커밋에 HEAD 옮기기
+git checkout HEAD~4 <현재 HEAD위치에서 4개 위의 커밋으로 HEAD 옮기기
+
+헤드 옮기기 : 직접참조
+git branch -f master HEAD~3 강제로 master branch를 HEAD에서 세번 뒤로 옮겼습니다.
+git branch -f master C6 <- 강제로 master branch를 C6 커밋으로 옮김
+git branch -f bugFix C0 <- 강제로 bugFix branch를 C0 커밋으로 옮김
+git checkout C1 <- HEAD의 위치를 C1 커밋으로 옮김
+
+작업 되돌리기 : reset, revert
+git reset C1 <- C1커밋으로 reset 하기 (reset하기 전 커밋이 남아있지만 볼 수 없다.?)
+git checkout pushed <- pushed 커밋으로 이동
+git revert C2 <- C2커밋에서 revert 하기 (C2커밋에서 revert 한다. C2'로 revert된다. 이전에 있던 C2커밋을 볼 수 있다?)
