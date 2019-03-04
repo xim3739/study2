@@ -1,0 +1,134 @@
+﻿package first.day2022;
+
+public class sim {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		boolean isOpnedDoor = false;
+		
+		Man someone = new Man();
+		someone.name = "sim";
+		
+		System.out.println("아침에 일어난다.");
+		isOpnedDoor = openDoor("방", isOpnedDoor);
+		System.out.println("방에서 나온다.");
+		isOpnedDoor = closeDoor("방",isOpnedDoor);
+		breakfast();
+		Enterbethroom();
+		System.out.println("씻는다.");
+		outbethroom();
+		TV();
+		EnterMyroom(someone);
+		computer(someone);
+		OutMyroom();
+		lunch();
+		Enterbethroom();
+		System.out.println("양치를 한다.");
+		outbethroom();
+		EnterMyroom(someone);
+		System.out.println("옷을 꺼낸다.");
+		System.out.println("옷을 입는다.");
+		OutMyroom();
+		isOpnedDoor = openDoor("현관",isOpnedDoor);
+		System.out.println("집을 나온다.");
+		isOpnedDoor = closeDoor("현관",isOpnedDoor);
+		System.out.println("카페를 간다.");
+		System.out.println("커피를 마신다.");
+		System.out.println("카페를 나온다.");
+		System.out.println("집으로 간다.");
+		isOpnedDoor = openDoor("현관",isOpnedDoor);
+		System.out.println("집에 들어간다.");
+		isOpnedDoor = closeDoor("현관",isOpnedDoor);
+		EnterMyroom(someone);
+		System.out.println("편한 옷으로 갈아입는다.");
+		OutMyroom();
+		dinner();
+		System.out.println("방으로 간다.");
+		EnterMyroom(someone);
+		computer(someone);
+		OutMyroom();
+		Enterbethroom();
+		System.out.println("씻는다.");
+		outbethroom();
+		TV();
+		EnterMyroom(someone);
+		System.out.println("잠을 잔다.");
+		
+	}
+	public static void breakfast() {
+		System.out.println("부억으로 간다.");
+		System.out.println("아침을 준비한다.");
+		System.out.println("다 먹고 설거지를 한다.");
+	}
+	public static void lunch() {
+		System.out.println("부억으로 간다.");
+		System.out.println("점심을 준비한다.");
+		System.out.println("다 먹고 설거지를 한다.");
+	}
+	
+	public static void dinner() {
+		System.out.println("부억으로 간다.");
+		System.out.println("저녁을 준비한다.");
+		System.out.println("다 먹고 설거지를 한다.");
+	}
+	
+	public static void EnterMyroom(Man someone){
+		System.out.println("방으로 간다.");
+		System.out.println("방 문을 연다.");
+		System.out.println("방에 들어간다.");
+		System.out.println("방 불을 킨다.");
+		System.out.println("방 문을 닫는다.");
+	}
+	public static void OutMyroom() {
+		System.out.println("방 불을 끈다.");
+		System.out.println("방 문을 연다.");
+		System.out.println("방을 나온다.");
+		System.out.println("방 문을 닫는다.");
+	}
+	public static void TV() {
+		System.out.println("거실로 간다.");
+		System.out.println("쇼파에 앉는다.");
+		System.out.println("티비를 본다.");
+		System.out.println("다 보고 티비를 끈다.");
+		System.out.println("쇼파에서 일어난다.");
+	}
+	public static void Enterbethroom() {
+		System.out.println("화장실로 간다.");
+		System.out.println("화장실 불을 킨다.");
+		System.out.println("화장실 문을 연다.");
+		System.out.println("화장실에 들어간다.");
+		System.out.println("화장실 문을 닫는다.");
+	}
+	public static void outbethroom() {
+		System.out.println("화장실 문을 연다.");
+		System.out.println("화장실에서 나온다.");
+		System.out.println("화장실 불을 끈다.");
+		System.out.println("화장실 문을 닫는다.");
+	}
+	public static void computer(Man someone) {
+		System.out.println("컴퓨터를 킨다.");
+		System.out.println("게임을 한다.");
+		System.out.println("게임을 다하고 컴퓨터를 끈다.");
+	}
+	
+	public static boolean openDoor(String door, boolean isOpened)  {
+		if (isOpened == false) {
+			System.out.println(door + " 문을 연다.");
+			return true;
+		}else {
+			return true;
+		}
+	}
+	
+	public static boolean closeDoor(String door, boolean isCloesd) {
+		if (isCloesd == true) {
+			System.out.println(door + "문을 닫는다.");
+			return true;
+		}else {
+			return true;
+		}
+	}
+	
+
+}
