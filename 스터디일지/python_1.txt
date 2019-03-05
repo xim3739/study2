@@ -1,0 +1,373 @@
+﻿Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 22:20:52) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> #print() 출력해주는 함수
+>>> print('hellow world')
+hellow world
+>>> print([1, 2, 3])
+[1, 2, 3]
+>>> print('my name is', 'sim')
+my name is sim
+>>> #input() 사용자가 입력을 받을수 있게 하는 함수
+>>> input()
+aaaaa
+'aaaaa'
+>>> #원래는 'aaaaa' 출력을 안해준다. 인터렉티스 기능중 하나이다.
+>>> input('이름을 입역하세요')
+이름을 입역하세요심재현
+'심재현'
+>>> input('당신의 나이는? :')
+당신의 나이는? :29
+'29'
+>>> age = input('당신의 나이는?')
+당신의 나이는?29
+>>> age
+'29'
+>>> #input 이라는 함수를 써서 입력을 받은 것을 age라는 공간에 저장한것, 또 사용할수 있다
+>>> #variable 변수에다 값을 저장할수 있다. 저장된 값은 변할수 있다. 그래서 변수라 한다.
+>>> my_int = 1
+>>> #1이라는 값을 변수 my_int에 할당한다. 저장한다. = 은 할당한다. 저장한다고 생각한다.(1이라는 값을 변수 my_int라고 이름을 지어주는것)
+>>> my_int + 3
+4
+>>> my_int * 100
+100
+>>> #my_int 는 1이라고 지정했기때문에 my_int + 3은 4가 되고 my_int * 100은 100이 된다.
+>>> #Naming 을 잘하자!
+>>> awdjkh___askdj = 1
+>>> awdjkh___askdj
+1
+>>> python = 1
+>>> PYTHON = 2
+>>> python
+1
+>>> PYTHON
+2
+>>> 1python = 1
+SyntaxError: invalid syntax
+>>> p1ython = 1
+>>> my int = 2
+SyntaxError: invalid syntax
+>>> #숫자로 시작 할 수 없고, 띄어쓰기를 할 수 없다.
+>>> #Data type 자료형 사용할수 있는 재료 , Numeric(숫자, 정수, 실수)
+>>> 1
+1
+>>> 2
+2
+>>> 3
+3
+>>> #정수형 자료
+>>> 1.2
+1.2
+>>> 3.2
+3.2
+>>> #실수형 자료
+>>> my_int = 1
+>>> my_int
+1
+>>> my_float = 3.14
+>>> my_float
+3.14
+>>> type(my_float)
+<class 'float'>
+>>> type(my_int)
+<class 'int'>
+>>> #type이라는 함수를 사용하면 그 변수, 객체의 타입을 알 수 있다.
+>>> #String
+>>> 'Hello'
+'Hello'
+>>> "Hello"
+'Hello'
+>>> 'Hello"
+SyntaxError: EOL while scanning string literal
+>>> #섞어서 쓸 수 없다.
+>>> print('hellow world')
+hellow world
+>>> #boolean / Ture, False
+>>> True
+True
+>>> False
+False
+>>> my_bool = True
+>>> print(my_bool)
+True
+>>> print(False)
+False
+>>> #list 숫자형 문자형 불린형 이런것들을 한꺼번에 모아서 저장을 한다. 저장하거나 값을 변경
+>>> my_list = []
+>>> my_list = [1, 2, 3]
+>>> my_list
+[1, 2, 3]
+>>> students = ['메이충리엘', '켈리', '남재우', '김민수', '제스퍼', '이에스']
+>>> students
+['메이충리엘', '켈리', '남재우', '김민수', '제스퍼', '이에스']
+>>> for std int students:
+
+SyntaxError: invalid syntax
+>>> for std in students:
+	print(std)
+
+
+메이충리엘
+켈리
+남재우
+김민수
+제스퍼
+이에스
+>>> import random
+>>> print(random.choice(students))
+남재우
+>>> print(random.choice(students))
+김민수
+>>> print(random.choice(students))
+김민수
+>>> choice
+Traceback (most recent call last):
+  File "<pyshell#70>", line 1, in <module>
+    choice
+NameError: name 'choice' is not defined
+>>> print(random.choice(students))
+켈리
+>>> students.append('희진 조')
+>>> students
+['메이충리엘', '켈리', '남재우', '김민수', '제스퍼', '이에스', '희진 조']
+>>> #Tuple 리스트와 비슷하지만 값을 바꿀 수 없다.
+>>> students[0] = '박경빈'
+>>> students
+['박경빈', '켈리', '남재우', '김민수', '제스퍼', '이에스', '희진 조']
+>>> students[1] = '호박'
+>>> students
+['박경빈', '호박', '남재우', '김민수', '제스퍼', '이에스', '희진 조']
+>>> my_tuple = ('요거트', '이에스', '레이')
+>>> my_tuple
+('요거트', '이에스', '레이')
+>>> my_tuple[0] = '문용석'
+Traceback (most recent call last):
+  File "<pyshell#81>", line 1, in <module>
+    my_tuple[0] = '문용석'
+TypeError: 'tuple' object does not support item assignment
+>>> #Dictionary {key1: val,....} / list, tuple, dictionary 를 합쳐서 컨테이너 라고 부른다.
+>>> my_dict = {'헤흐': '남', 'Meta': '남', '김왼손': '여')
+SyntaxError: invalid syntax
+>>> my_dict = {'헤흐': '남', 'Meta': '남', '김왼손': '여'}
+>>> my_dict =['김왼손]
+
+SyntaxError: EOL while scanning string literal
+>>> my_dict =['김왼손']
+
+>>> my_dict =['김왼손']
+
+>>> my_dict = {'헤흐': '남', 'Meta': '남', '김왼손': '여'}
+
+>>> my_dict ['김왼손']
+
+'여'
+>>> my_dict['김왼손'] = '남'
+
+>>> my_dict
+
+{'헤흐': '남', 'Meta': '남', '김왼손': '남'}
+>>> #수정이 가능하다
+
+>>> #int() str() ....
+
+>>> my_int = 1
+
+>>> type(my_int)
+
+<class 'int'>
+>>> float(my_int)
+
+1.0
+>>> type(my_int)
+
+<class 'int'>
+>>> str(my_int)
+
+'1'
+>>> type(str(my_int))
+
+<class 'str'>
+>>> my_str = "cording"
+
+>>> my_str
+
+'cording'
+>>> list(my_str)
+
+['c', 'o', 'r', 'd', 'i', 'n', 'g']
+>>> #Comment 주석
+
+>>> # "string" 'string' 문자열 값을 변경할수 없고 순서를 변경할수 없다.
+
+>>> my_str = "김씨가족"
+
+>>> print(my_str)
+
+김씨가족
+>>> type(my_str)
+
+<class 'str'>
+>>> my_str = '호박'
+
+>>> print(my_str)
+
+호박
+>>> type(my_str)
+
+<class 'str'>
+>>> #"""string""" '''string'''
+
+>>> my_str = """제스퍼
+토미
+메타
+"""
+
+>>> my_str
+
+'제스퍼\n토미\n메타\n'
+>>> #""" 를 쓰면 여러줄 문자열을 한꺼번에 쓸수 있다 '''도 마찬가지
+
+>>> #Formatting 문자열을 잘 표현하기 위해서 쓴다. %d, %f, %s
+
+>>> my_str = 'My name is %s' % 'young choi')
+SyntaxError: invalid syntax
+>>> my_str = 'My name is %s' % 'young choi'
+>>> my_str
+'My name is young choi'
+>>> #young choi 라는 문자열이 %s로 대입이 된다.
+>>> '%d %d' % (1, 2)
+'1 2'
+>>> #%d 는 정수형
+>>> '%f' % 3.14
+'3.140000'
+>>> #%f 는 실수형
+>>> #'{}'.format() python 스러운 더 많이 쓴다.
+>>> 'my name is %s' % '조희진'
+'my name is 조희진'
+>>> 'my name is {}'.format('조희진')
+'my name is 조희진'
+>>> '{} * {] = {}'.format(2, 3, 2*3)
+Traceback (most recent call last):
+  File "<pyshell#135>", line 1, in <module>
+    '{} * {] = {}'.format(2, 3, 2*3)
+ValueError: unexpected '{' in field name
+>>> '{} * {} = {}'.format(2, 3, 2*3)
+'2 * 3 = 6'
+>>> #순서대로 들어간다.
+>>> '{1} * {0} = {
+}'.format(2, 3, 2*3)
+SyntaxError: EOL while scanning string literal
+>>> '{1} * {0} = {2}'.format(2, 3, 2*3)
+'3 * 2 = 6'
+>>> #값이 들어가는 순서도 지정할 수 있다.
+>>> #Indexing 주소 위치 0부터 시작. Python 0 1 2 3 4 5
+>>> my_name = "김왼손의 왼손코딩"
+>>> #공백도 순서에 포함한다.
+>>> my_name[3]
+'의'
+>>> my_name[8]
+'딩'
+>>> #- index도 사용가능하다. Python -6 -5 -4 -3 -2 -1
+>>> my_name[-1]
+'딩'
+>>> #Slicing 여러개를 뽑아올 수 있다. Python 0 1 2 3 4 5 6 글자 사이의 경계선으로 정한다.
+>>> my_name
+'김왼손의 왼손코딩'
+>>> my_name[5:7]
+'왼손'
+>>> #0 1 2 3 4 5 6 7 8 9
+>>> # [:3] 처음부터 숫자까지, [2:] 숫자부터 끝까지, [:] 처음부터 끝까지
+>>> #잘라서 복사해 오는것 원래의 값은 그대로 있다.
+>>> #string.split() 메소드(string자료형이 할 수 있는 함수) 이미 만들어져있는 함수(어떤 기능을 하기위해서 모아 놓아서 이름을 붙인것) 문자열을 공백 단위로 자른다.
+>>> my_name
+'김왼손의 왼손코딩'
+>>> my_name.spilt()
+Traceback (most recent call last):
+  File "<pyshell#156>", line 1, in <module>
+    my_name.spilt()
+AttributeError: 'str' object has no attribute 'spilt'
+>>> my_name.split()
+['김왼손의', '왼손코딩']
+>>> fruit_str = '거봉 수박 포도 복숭아 망고 딸기 배 참외 찹쌀떡'
+>>> fruit_str
+'거봉 수박 포도 복숭아 망고 딸기 배 참외 찹쌀떡'
+>>> fruits = frut_str.split()
+Traceback (most recent call last):
+  File "<pyshell#160>", line 1, in <module>
+    fruits = frut_str.split()
+NameError: name 'frut_str' is not defined
+>>> fruits = fruit_str.split()
+>>> fruits
+['거봉', '수박', '포도', '복숭아', '망고', '딸기', '배', '참외', '찹쌀떡']
+>>> #Docstring 문자열을 쓸 때 ''' """ 을 주석으로 사용할 수 있다.
+>>> #이것이 주석입니다.
+>>> """이것도 주석입니다."""
+'이것도 주석입니다.'
+>>> #실행은 되지만 프로그램에 영향을 미치는 작동을 하지 않는다. 주석으로 사용한다. 함수를 만들때 함수설명을 위해 쓰는 주석이다.
+>>> #print('', end='') 출력의 끝을 지정할 수 있다.
+>>> print('집단지성')
+집단지성
+>>> print('집단지성', end='')
+집단지성
+>>> print('집단지성', end='/')
+집단지성/
+>>> print('집단지성', end='미운코딩새끼')
+집단지성미운코딩새끼
+>>> #Escape code 어느 특정한 기능을 수행을 하는 문자의 조합 \n 줄바꿈, \t 탭
+>>> print('미운코딩새끼의 집단지성들')
+미운코딩새끼의 집단지성들
+>>> print('미운코딩새끼의\n집단지성들')
+미운코딩새끼의
+집단지성들
+>>> print('미운코딩새끼의\t집단지성들')
+미운코딩새끼의	집단지성들
+>>> print('미운코딩새끼의\t집단\n지성들')
+미운코딩새끼의	집단
+지성들
+>>> print('미운', end='\n')
+미운
+>>> print('미운', end='\t'); print('코딩')
+미운	코딩
+>>> #list 여러개의 값을 함께 모아서 저장할 수 있다. immutable 값 변경 안됨(문자열), mutable 값 변경(list) 됨
+>>> #list[val1, val2....]
+>>> my_list = []
+>>> my_list
+[]
+>>> type(my_list)
+<class 'list'>
+>>> my_list = [1, 2, 3]
+>>> my_list
+[1, 2, 3]
+>>> std = ['이에스', '이에스2', '이에스3']
+>>> std
+['이에스', '이에스2', '이에스3']
+>>> std.append('토미')#append 메소드 list만 사용가능
+>>> std
+['이에스', '이에스2', '이에스3', '토미']
+>>> std.append('찹쌀떡')
+>>> std
+['이에스', '이에스2', '이에스3', '토미', '찹쌀떡']
+>>> animals = []
+>>> animals
+[]
+>>> animals.append('코알라')
+>>> animals.append('하이에나')
+>>> animals.append('바다소')
+>>> animals.append('땅다람쥐')
+>>> animals
+['코알라', '하이에나', '바다소', '땅다람쥐']
+>>> humans.append('조희진')
+Traceback (most recent call last):
+  File "<pyshell#199>", line 1, in <module>
+    humans.append('조희진')
+NameError: name 'humans' is not defined
+>>> #list는 그릇이라 생각. humans라는 그릇이 없어서 append가 되지 않는다.
+>>> humans = []
+>>> humans.appens('조희진')
+Traceback (most recent call last):
+  File "<pyshell#202>", line 1, in <module>
+    humans.appens('조희진')
+AttributeError: 'list' object has no attribute 'appens'
+>>> humans.append('조희진')
+>>> humans
+['조희진']
+>>>
